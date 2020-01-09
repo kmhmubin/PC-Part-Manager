@@ -12,7 +12,7 @@ class Application(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.master = master
-        master.title('Part Manager')
+        master.title('PC Part Manager')
         # Width height
         master.geometry("700x350")
         # Create widgets/grid
@@ -55,7 +55,7 @@ class Application(tk.Frame):
         self.price_entry.grid(row=1, column=3)
 
         # Parts list (listbox)
-        self.parts_list = tk.Listbox(self.master, height=8, width=50, border=0)
+        self.parts_list = tk.Listbox(self.master, height=8, width=70, border=0)
         self.parts_list.grid(row=3, column=0, columnspan=3,
                              rowspan=6, pady=20, padx=20)
         # Create scrollbar
